@@ -7,6 +7,14 @@ gem 'rails', '3.2.1'
 
 gem 'sqlite3'
 gem 'mysql2', :group => :production
+gem install activerecord-postgresql-adapter
+
+cat Gemfile
+    ...
+        group :production do
+# gems specifically for Heroku go here
+gem "pg"
+end
 
 
 # Gems used only for assets and not required
